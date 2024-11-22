@@ -15,7 +15,7 @@ export default {
       type: "text",
       intlLabel: {
         id: "ab-custom-slug.title",
-        defaultMessage: "Encoded Slug",
+        defaultMessage: "Slug",
       },
       intlDescription: {
         id: "ab-custom-slug.description",

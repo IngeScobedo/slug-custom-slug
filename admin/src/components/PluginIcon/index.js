@@ -5,7 +5,7 @@
  */
 
 import React from 'react';
-import { Key } from "@strapi/icons";
+import { Link } from "@strapi/icons";
 
 
 const PluginIcon = () => {
@@ -15,7 +15,7 @@ const PluginIcon = () => {
     // backgroundColor: theme ==='light' ?  '' : 'rgb(240, 240, 255)',
   };
 
-  return <Key style={iconStyle} />;
+  return <Link style={iconStyle} />;
 };
 
 export default PluginIcon;

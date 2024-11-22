@@ -61,7 +61,11 @@ const Input = ({ name, value, intlLabel, attribute }) => {
   };
 
   const modifySlugAndData = (value) => {
-    const sluggifiedValue = encodeURI(slugify(value));
+    const sluggifiedValue = slugify(value, {
+      separator: "-",
+      lower: true,
+      strict: true,
+    })
 
     setSlug(sluggifiedValue);
     onChange({ target: { name, value: sluggifiedValue, type: "text" } });
